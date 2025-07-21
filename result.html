@@ -46,7 +46,7 @@
 
   <table class="info-table">
     <tr><td><strong>Name</strong></td><td id="name"></td></tr>
-    <tr><td><strong>Father's Name</strong></td><td id="father"></td></tr>
+    <tr><td><strong>Father's Name</strong></td><td id="fname"></td></tr>
     <tr><td><strong>University Roll No.</strong></td><td id="roll"></td></tr>
     <tr><td><strong>Course (Branch)</strong></td><td id="branch"></td></tr>
     <tr><td><strong>College Roll No.</strong></td><td id="collegeRoll"></td></tr>
@@ -90,7 +90,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     document.getElementById('name').textContent = urlParams.get('name');
-    document.getElementById('father').textContent = urlParams.get('father');
+    document.getElementById('fname').textContent = urlParams.get('fname');
     document.getElementById('roll').textContent = urlParams.get('roll');
     document.getElementById('branch').textContent = urlParams.get('branch');
     document.getElementById('collegeRoll').textContent = urlParams.get('collegeRoll');
