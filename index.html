@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GNDEC Result Form</title>
+  <link rel="stylesheet" href="gndec.css" />
+</head>
+<body>
+<!-- GNDEC Banner Image -->
+<div class="gndec-banner">
+  <img src="gndec-banner.png" alt="GNDEC Banner" />
+</div>
+
+  <!-- Banner/Header -->
+  <header>
+    <img src="https://academics.gndec.ac.in/assets/images/logo.png" alt="GNDEC Logo" />
+    <div>
+      <h1>Guru Nanak Dev Engineering College</h1>
+      <p>Academic Management System</p>
+    </div>
+  </header>
+
+  <!-- Form Section -->
+  <form id="resultForm">
+    <h2>Enter Student Details</h2>
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="fname">Father's Name</label>
+    <input type="text" name="fname" id="fname" required />
+
+
+    <label for="roll">University Roll No.</label>
+    <input type="text" name="roll" id="roll" required />
+
+    <label for="branch">Course (Branch)</label>
+    <input type="text" name="branch" id="branch" required />
+
+    <label for="collegeRoll">College Roll No.</label>
+    <input type="text" name="collegeRoll" id="collegeRoll" required />
+
+    <button type="submit">View Result</button>
+  </form>
+
+  <script>
+    document.getElementById('resultForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const params = new URLSearchParams(data).toString();
+      window.location.href = 'result.html?' + params;
+    });
+  </script>
+
+</body>
+</html>
