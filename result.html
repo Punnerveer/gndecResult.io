@@ -24,32 +24,42 @@
     }
     .info-table td {
       text-align: left;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .info-table tr td:first-child {
+      width: 30%;
+      font-weight: 700;
     }
     .note {
       margin-top: 20px;
       font-size: 14px;
     }
     .gndec-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+    thead th {
+      background: #e6e6e6;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
-    <div class="gndec-banner">
-  <img src="gndec-banner.png" alt="GNDEC Banner" />
-</div>
-  <h2 style="text-align:center">PROVISIONAL RESULT<br>ESE, May, 2025</h2>
+  <div class="gndec-banner">
+    <img src="gndec-banner.png" alt="GNDEC Banner" />
+  </div>
+
+  <h2 style="text-align:center">PROVISIONAL RESULT<br>ESE, Dec, 2025</h2>
 
   <table class="info-table">
-    <tr><td><strong>Name</strong></td><td id="name"></td></tr>
-    <tr><td><strong>Father's Name</strong></td><td id="fname"></td></tr>
-    <tr><td><strong>University Roll No.</strong></td><td id="roll"></td></tr>
-    <tr><td><strong>Course (Branch)</strong></td><td id="branch"></td></tr>
-    <tr><td><strong>College Roll No.</strong></td><td id="collegeRoll"></td></tr>
+    <tr><td>Name</td><td>PUNNERVEER SINGH</td></tr>
+    <tr><td>Father's Name</td><td>DEVINDER SINGH</td></tr>
+    <tr><td>University Roll No.</td><td>2435134</td></tr>
+    <tr><td>Course (Branch)</td><td>B.Tech. (Computer Science and Engineering)</td></tr>
+    <tr><td>College Roll No.</td><td>2415233</td></tr>
   </table>
 
   <table>
@@ -68,32 +78,113 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>2</td><td>BSC101</td><td>17809</td><td>Physics</td><td>T</td><td>Regular</td><td>78</td><td>90</td><td>52</td><td>60</td></tr>
-      <tr><td>2</td><td>BSC104</td><td>17854</td><td>Mathematics-II</td><td>T</td><td>Regular</td><td>36</td><td>40</td><td>48</td><td>60</td></tr>
-      <tr><td>2</td><td>ESC102</td><td>17811</td><td>Engineering Drawing and Graphics</td><td>T</td><td>Regular</td><td>32</td><td>40</td><td>42</td><td>60</td></tr>
-      <tr><td>2</td><td>ESC105</td><td>17855</td><td>Programming Fundamentals using Python</td><td>T</td><td>Regular</td><td>82</td><td>90</td><td>50</td><td>60</td></tr>
-      <tr><td>2</td><td>HSMC102</td><td>17810</td><td>Economics</td><td>T</td><td>Regular</td><td>32</td><td>40</td><td>44</td><td>60</td></tr>
-      <tr><td>2</td><td>LESC104</td><td>17813</td><td>Manufacturing Practices</td><td>P</td><td>Regular</td><td>44</td><td>50</td><td>-</td><td>-</td></tr>
-      <tr><td>2</td><td>MPD101</td><td>17856</td><td>Mentoring and Professional Development</td><td>P</td><td>Regular</td><td>91</td><td>100</td><td>-</td><td>-</td></tr>
+      <tr>
+        <td>3</td>
+        <td>BSCS101</td>
+        <td>96333 / 96333</td>
+        <td>Applied Mathematics</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>24</td>
+        <td>40</td>
+        <td>29</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>CCS101</td>
+        <td>96337 / 96337</td>
+        <td>Object Oriented Programming</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>58</td>
+        <td>90</td>
+        <td>44</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>CCS102</td>
+        <td>96336 / 96336</td>
+        <td>Data Structures</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>49</td>
+        <td>90</td>
+        <td>16</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>CCS103</td>
+        <td>96335 / 96335</td>
+        <td>Computer Architecture</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>27</td>
+        <td>40</td>
+        <td>13</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>ESCS101</td>
+        <td>96334 / 96334</td>
+        <td>Digital Electronics</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>60</td>
+        <td>90</td>
+        <td>14</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>MC101</td>
+        <td>96332 / 96332</td>
+        <td>Indian Constitution</td>
+        <td>T</td>
+        <td>Regular</td>
+        <td>36</td>
+        <td>50</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>SMCS101</td>
+        <td>96331 / 96331</td>
+        <td>Seminar and Technical Report Writing for Engineers</td>
+        <td>P</td>
+        <td>Regular</td>
+        <td>44</td>
+        <td>50</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>TRCS101</td>
+        <td>96330 / 96330</td>
+        <td>Training-I</td>
+        <td>P</td>
+        <td>Regular</td>
+        <td>48</td>
+        <td>60</td>
+        <td>32</td>
+        <td>40</td>
+      </tr>
     </tbody>
   </table>
 
   <div class="note">
     <ul>
-      <li>The provisional result shows actual marks earned by students.</li>
-      <li>Papers under UMC may be cancelled upon investigation.</li>
-      <li>This result is for informational purposes only.</li>
-      <li>Visit the official college website for final results.</li>
+      <li>The provisional result shows the actual marks earned by the students in the concerned subjects.</li>
+      <li>All papers of students involved in Unfair Means Cases (UMC) may be cancelled. The final result notification of students involved in UMC will be issued as per recommendations of CRC (Complaint Redressal Committee) and approval from competent authority.</li>
+      <li>This provisional result available on website is for information only and shall not be treated as final.</li>
+      <li>The (External) awards may change after the Display and Redress Process.</li>
+      <li>For further updates keep visiting college website regularly.</li>
     </ul>
   </div>
-
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    document.getElementById('name').textContent = urlParams.get('name');
-    document.getElementById('fname').textContent = urlParams.get('fname');
-    document.getElementById('roll').textContent = urlParams.get('roll');
-    document.getElementById('branch').textContent = urlParams.get('branch');
-    document.getElementById('collegeRoll').textContent = urlParams.get('collegeRoll');
-  </script>
 </body>
 </html>
